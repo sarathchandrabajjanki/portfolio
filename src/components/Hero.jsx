@@ -1,24 +1,30 @@
-import React from 'react'
-import '../styles/hero.css'
+import React from "react";
+import "../styles/Hero.css";
+import profileImg from "../assets/sarath.jpg"; // <-- place your image in src/assets folder
 
-function Hero(){
+function Hero() {
   return (
-    <section id="top" className="hero">
-      <div className="hero-inner card">
+    <section className="hero" id="home">
+      <div className="hero-inner">
         <div className="hero-text">
-          <h1>Frontend Developer</h1>
+          <h1>Hi, I’m <span className="highlight">Sarath Chandra</span></h1>
           <p>
-            I build responsive, accessible, and fast web interfaces with React, modern CSS,
-            and clean component architecture.
+            A passionate <strong>Frontend Developer</strong> with expertise in 
+            modern web technologies. I love building elegant, user-friendly, and 
+            responsive websites.
           </p>
           <div className="hero-actions">
-            <a className="btn primary" href="#projects">View Projects</a>
-            <a className="btn" href="#contact">Contact Me</a>
+            <a href="#projects" className="btn primary">View My Work</a>
+            <a href="#contact" className="btn secondary">Get in Touch</a>
           </div>
+        </div>
+        
+        <div className="hero-image">
+          <img src={profileImg} alt="Sarath Chandra" />
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

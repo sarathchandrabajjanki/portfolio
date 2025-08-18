@@ -6,6 +6,8 @@ import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
 import Experience from './components/Experience.jsx'
 import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx' // ✅ add footer for professionalism
+import './styles/global.css' // ✅ global base styles
 
 function App(){
   return (
@@ -19,6 +21,7 @@ function App(){
         <Experience />
         <Contact />
       </main>
+      <Footer />
     </>
   )
 }

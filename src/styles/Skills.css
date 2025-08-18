@@ -1,58 +1,72 @@
 .skills {
-  padding: 60px 20px;
-  background: #ffffff;
+  padding: 100px 20px;
+  background: #f9fafc;
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 40px;
-  color: #1f2937; /* dark gray */
+  margin-bottom: 60px;
+  color: #1f2937;
 }
 
-/* Grid layout for skills */
+.skills-group {
+  margin-bottom: 50px;
+}
+
+.skills-category {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 15px;
+  gap: 25px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* Skill chip design */
-.skill.chip {
-  background: #f3f4f6;
-  border: 2px solid transparent;
-  border-radius: 30px;
-  padding: 10px 16px;
-  font-size: 0.95rem;
-  font-weight: 500;
+.skill-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
   text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.skill-card .icon {
+  font-size: 2rem;
+  color: #2563eb;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  font-weight: 500;
   color: #374151;
-  cursor: default;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* Hover effects */
-.skill.chip:hover {
-  background: #2563eb;
-  color: #ffffff;
-  border-color: #2563eb;
-  transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
-
-/* Responsive spacing */
+/* Responsive */
 @media (max-width: 600px) {
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
+  .skills {
+    padding: 60px 15px;
   }
-
-  .skill.chip {
-    font-size: 0.85rem;
-    padding: 8px 14px;
+  .section-title {
+    font-size: 2rem;
+  }
+  .skills-category {
+    font-size: 1.2rem;
   }
 }

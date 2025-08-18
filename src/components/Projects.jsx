@@ -17,11 +17,7 @@ const projects = [
     link: 'https://e-commerce-app-eta-beryl.vercel.app/',
     description: 'Responsive e-commerce UI with product listings and routing.'
   },
-  {
-    name: 'AirMax Product Card UI',
-    link: 'https://funny-gumdrop-f66a83.netlify.app/',
-    description: 'Interactive product card with hover effects and options.'
-  }
+  
 ]
 
 function Projects(){
