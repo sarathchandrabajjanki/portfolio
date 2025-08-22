@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/contact.css";
+import "../styles/Contact.css";
 import profilePic from "../assets/sarath.jpg"; // 👉 place your photo inside src/assets/
 
 function Contact() {
