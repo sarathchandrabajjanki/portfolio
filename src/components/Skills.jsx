@@ -1,28 +1,78 @@
+// src/components/Skills.jsx
 import React from "react";
 import "../styles/Skills.css";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNode, FaGitAlt, FaFigma } from "react-icons/fa";
-import { SiTypescript, SiRedux, SiNextdotjs, SiTailwindcss, SiVite, SiFirebase, SiGraphql } from "react-icons/si";
+import {
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNode, FaGitAlt, FaFigma
+} from "react-icons/fa";
+import {
+  SiTypescript, SiRedux, SiNextdotjs, SiTailwindcss, SiVite,
+  SiFirebase, SiGraphql, SiBootstrap, SiChakraui, SiCypress, SiSass,
+  SiSupabase, SiAxios, SiJenkins, SiNetlify, SiVercel
+} from "react-icons/si";
 
 const skills = [
-  { category: "Frontend", items: [
-    { name: "HTML5", icon: <FaHtml5 /> },
-    { name: "CSS3", icon: <FaCss3Alt /> },
-    { name: "JavaScript", icon: <FaJs /> },
-    { name: "TypeScript", icon: <SiTypescript /> },
-    { name: "React.js", icon: <FaReact /> },
-    { name: "Redux", icon: <SiRedux /> },
-    { name: "Next.js", icon: <SiNextdotjs /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-  ]},
-  { category: "Tools & Build", items: [
-    { name: "Git", icon: <FaGitAlt /> },
-    { name: "Vite", icon: <SiVite /> },
-    { name: "Firebase", icon: <SiFirebase /> },
-    { name: "GraphQL", icon: <SiGraphql /> },
-  ]},
-  { category: "Design", items: [
-    { name: "Figma", icon: <FaFigma /> },
-  ]}
+  {
+    category: "Frontend",
+    items: [
+      { name: "HTML5", icon: <FaHtml5 /> },
+      { name: "CSS3", icon: <FaCss3Alt /> },
+      { name: "JavaScript (ES6+)", icon: <FaJs /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
+      { name: "React.js", icon: <FaReact /> },
+      { name: "Redux", icon: <SiRedux /> },
+      { name: "Context API", icon: <FaReact /> }, // reuse React icon
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "Bootstrap", icon: <SiBootstrap /> },
+      { name: "Chakra UI", icon: <SiChakraui /> },
+      { name: "SASS", icon: <SiSass /> },
+      { name: "Responsive Web Design", icon: <FaCss3Alt /> }
+    ]
+  },
+  {
+    category: "Backend & APIs",
+    items: [
+      { name: "Node.js", icon: <FaNode /> },
+      { name: "RESTful APIs / AJAX", icon: <SiAxios /> },
+      { name: "GraphQL", icon: <SiGraphql /> },
+      { name: "Supabase", icon: <SiSupabase /> }
+    ]
+  },
+  {
+    category: "State Management",
+    items: [
+      { name: "Redux", icon: <SiRedux /> },
+      { name: "Zustand", icon: <SiRedux /> }, // placeholder reuse
+      { name: "Context API", icon: <FaReact /> }
+    ]
+  },
+  {
+    category: "Tools, Testing & Deployment",
+    items: [
+      { name: "Git / GitHub", icon: <FaGitAlt /> },
+      { name: "Vite", icon: <SiVite /> },
+      { name: "Jenkins / CI-CD", icon: <SiJenkins /> },
+      { name: "Cypress", icon: <SiCypress /> },
+      { name: "Postman (API Testing)", icon: <SiAxios /> },
+      { name: "Netlify", icon: <SiNetlify /> },
+      { name: "Vercel", icon: <SiVercel /> }
+    ]
+  },
+  {
+    category: "Design & UI",
+    items: [
+      { name: "Figma", icon: <FaFigma /> },
+      { name: "User Interface Design", icon: <FaFigma /> }
+    ]
+  },
+  {
+    category: "Development Methodologies",
+    items: [
+      { name: "Responsive Web Design", icon: <FaCss3Alt /> },
+      { name: "Agile Methodology", icon: <FaGitAlt /> }, // placeholder
+      { name: "Jira / ClickUp", icon: <FaGitAlt /> }        // placeholder
+    ]
+  }
 ];
 
 function Skills() {

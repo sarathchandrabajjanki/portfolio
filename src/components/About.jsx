@@ -31,9 +31,10 @@ function About() {
             <li>🌱 Constant learner, exploring GraphQL & advanced testing</li>
           </ul>
 
-          <a href="/resume.pdf" className="btn primary" download>
+          <a href="/resume-sarath.pdf" className="btn primary" download>
             Download Resume
           </a>
+          
         </div>
       </div>
     </section>
