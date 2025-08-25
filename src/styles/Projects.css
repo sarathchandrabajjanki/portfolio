@@ -1,80 +1,54 @@
 .projects {
-  padding: 80px 20px;
-  background: #f9fafc;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 .section-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 50px;
-  color: #1f2937;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  max-width: 1150px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
-.project {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 30px 35px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+.project.card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
 }
 
-.project:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+.project.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .project h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #2563eb;
-  margin-bottom: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.subtitle {
-  font-size: 1rem;
-  color: #4b5563;
-  margin-bottom: 20px;
-  line-height: 1.7;
+.project .subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #555;
 }
 
-/* Button */
 .project .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 0.6rem 1.2rem;
   border-radius: 8px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  text-decoration: none;
   background: #2563eb;
-  color: #ffffff;
-  border: 2px solid #2563eb;
-  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
 .project .btn:hover {
   background: #1e40af;
-  border-color: #1e40af;
-}
-
-/* Responsive */
-@media (min-width: 600px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 992px) {
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }

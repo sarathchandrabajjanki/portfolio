@@ -17,7 +17,11 @@ const projects = [
     link: 'https://e-commerce-app-eta-beryl.vercel.app/',
     description: 'Responsive e-commerce UI with product listings and routing.'
   },
-  
+  {
+    name: 'Food App',
+    link: 'https://food-app-zeta-plum.vercel.app/',
+    description: 'Recipe browsing app with add-to-cart functionality built using React.'
+  }
 ]
 
 function Projects(){
