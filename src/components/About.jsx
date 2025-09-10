@@ -24,14 +24,14 @@ function About() {
           </p>
 
           <ul className="highlights">
-            <li>💻 Skilled in React, Next.js, TypeScript, and modern CSS frameworks</li>
+            <li>💻 Skilled in React,  TypeScript, and modern CSS frameworks</li>
             <li>⚡ Experienced with performance optimization & responsive design</li>
             <li>🚀 Hands-on with Git, CI/CD, and cloud deployment (Vercel, Firebase)</li>
             <li>🎨 Strong eye for UI/UX and accessibility best practices</li>
             <li>🌱 Constant learner, exploring GraphQL & advanced testing</li>
           </ul>
 
-          <a href="/resume-sarath.pdf" className="btn primary" download>
+          <a href="https://drive.google.com/file/d/1DKYLoFAoc46XAd1_9hvmSOOBmyYuXo2m/view?usp=drive_link" target="blank" className="btn primary" download>
             Download Resume
           </a>
           

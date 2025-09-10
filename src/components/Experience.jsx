@@ -5,21 +5,13 @@ const experiences = [
   {
     title: "Frontend Developer",
     company: "Godavari Wave Technologies Pvt. Ltd",
-    period: "Jan 2025 – Present",
+    period: "Mar 2024 – Present",
     details: [
       "Developed and deployed responsive web interfaces using HTML, CSS, JavaScript, and React.js, improving user experience and reducing page load time by 30%.",
       "Used Git and GitHub for version control and streamlined development through CI/CD pipelines using Netlify and Vercel."
     ]
   },
-  {
-    title: "Personal Secretary",
-    company: "RX Pillkraft Pvt. Ltd",
-    period: "Mar 2024 – Dec 2024",
-    details: [
-      "Supported the Managing Director of Megson Diagnostics, Z Mall, and others.",
-      "Scheduled meetings, coordinated travel, and managed daily office operations."
-    ]
-  },
+  
   {
     title: "Area Manager",
     company: "AAIMS Protections Pvt. Ltd",
