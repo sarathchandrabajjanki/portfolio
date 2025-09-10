@@ -21,7 +21,7 @@ const skills = [
       { name: "React.js", icon: <FaReact /> },
       { name: "Redux", icon: <SiRedux /> },
       { name: "Context API", icon: <FaReact /> }, // reuse React icon
-      { name: "Next.js", icon: <SiNextdotjs /> },
+  
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
       { name: "Bootstrap", icon: <SiBootstrap /> },
       { name: "Chakra UI", icon: <SiChakraui /> },
